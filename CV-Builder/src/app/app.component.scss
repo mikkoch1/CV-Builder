@@ -1,0 +1,38 @@
+.page {
+  --highlightColor: #3f51b5;
+
+  --headlineColor: #666;
+  --headlineFontSize: 1.6em;
+  --headlineFontWeight: 600;
+  --headlineFontType: "Source Sans Pro", "Roboto", "Arial", "Tahoma",
+    "Century Gothic", "Lucida Sans";
+  --headlineBorderType: dashed;
+
+  --textColor: #666;
+  --textFontSize: 1em;
+  // --textFontWeight: 200;
+  --textFontType: "Roboto", "Arial", "Tahoma", "Century Gothic", "Lucida Sans";
+
+  display: flex;
+  width: 80vw;
+  max-width: 21cm;
+  min-height: 29.7cm;
+  padding: 0.7cm;
+  margin: 2rem;
+  background-color: #ffffff;
+}
+
+@media print {
+  :host {
+    display: block;
+  }
+
+  .page {
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
+    min-height: initial;
+    padding: 0;
+    margin: 0;
+  }
+}
